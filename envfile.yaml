@@ -1,0 +1,12 @@
+name: virtualenv
+channels:
+  - defaults
+
+dependencies:
+  - python=3.8
+  - anaconda
+  # Core scientific python
+  - numpy
+  - pandas
+  -pip:
+    - azureml-sdk
