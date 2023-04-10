@@ -1,12 +1,21 @@
-name: virtualenv
-channels:
-  - defaults
 
+name: my-env
+
+# Specify the dependencies
 dependencies:
-  - python=3.8
-  - anaconda
-  # Core scientific python
+  # The Python version
+  - python=3.6.2
+  # The numpy package
   - numpy
+  # The scikit-learn package
+  - scikit-learn
+  # The pandas package
   - pandas
-  -pip:
-    - azureml-sdk
+  # The azureml-defaults package
+  - azureml-defaults
+
+# Specify the channels
+channels:
+  - anaconda
+  - conda-forge
+  - microsoft-azure
